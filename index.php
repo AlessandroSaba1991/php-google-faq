@@ -65,11 +65,13 @@ $nav = [
             display: flex;
             list-style: none;
             column-gap: 2rem;
+            margin: 0;
         }
 
         a {
             text-decoration: none;
             color: black;
+            padding: 0.5rem 0;
         }
 
         .container {
@@ -78,10 +80,10 @@ $nav = [
 
         .active {
             color: blue;
-            border-bottom: 1px solid blue;
+            border-bottom: 2px solid blue;
         }
 
-        .bottom_header{
+        .bottom_header {
             border-bottom: 1px solid black;
         }
     </style>
@@ -89,14 +91,14 @@ $nav = [
 
 <body>
     <header id="site_header">
-        <div class="top_header d-flex align-items-center">
-            <img src="https://www.uomoemanager.it/wp-content/uploads/2013/02/see-how-your-google-results-measure-up-with-google-grader-video-6b8bbb4b41.jpg" alt="" width="150">
-            <h1 class="h2 mb-0">Privacy & Termini</h1>
+        <div class="top_header d-flex align-items-center ps-2">
+            <img src="https://1000marche.net/wp-content/uploads/2020/03/Google-logo.png" alt="" width="150">
+            <h1 class="h2 mb-0 ms-2">Privacy & Termini</h1>
         </div>
         <div class="bottom_header">
-            <ul>
+            <ul class="ps-2">
                 <?php foreach ($nav as $title) : ?>
-                    <li>
+                    <li class="py-2">
                         <a href="#" class="<?= $title === 'Domande frequenti' ? 'active' : ''; ?>">
                             <?= $title; ?>
                         </a>
