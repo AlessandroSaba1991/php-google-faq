@@ -56,7 +56,7 @@ $nav = [
     <title>PHP GOOGLE FAQ</title>
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3' crossorigin='anonymous'>
     <style>
-        h2 {
+        h3 {
             margin-top: 3rem;
             margin-bottom: 1.5rem;
         }
@@ -93,7 +93,7 @@ $nav = [
     <header id="site_header">
         <div class="top_header d-flex align-items-center ps-2">
             <img src="https://1000marche.net/wp-content/uploads/2020/03/Google-logo.png" alt="" width="150">
-            <h1 class="h2 mb-0 ms-2">Privacy & Termini</h1>
+            <h2 class="mb-0 ms-2">Privacy & Termini</h2>
         </div>
         <div class="bottom_header">
             <ul class="ps-2">
@@ -110,7 +110,7 @@ $nav = [
     <main id="site_main">
         <div class="container">
             <?php foreach ($questions_answers as $value) : ?>
-                <h2><?= $value['question']; ?></h2>
+                <h3><?= $value['question']; ?></h3>
                 <?php foreach ($value['answer'] as $answer) : ?>
                     <p><?= $answer; ?></p>
                 <?php endforeach; ?>
